@@ -1,0 +1,9 @@
+James	1
+Ben	2
+Suri	1
+Sarah	1
+Jane	2
+Mario	2
+Lucy	1
+Sergio	2
+Mary	2
