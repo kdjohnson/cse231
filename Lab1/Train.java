@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Train{
 	ArrayList<Passenger> travelers;
 
+	@Override 
 	public boolean equals( Object o ){
 		if( ! ( o instanceof Train) ){
 			return false;
@@ -55,6 +56,7 @@ public class Train{
 		    travelers.trimToSize();
 	    }
 
+	@Override
 	public String toString(){
 		String result = "";
 		for( Passenger tempPass : travelers ){

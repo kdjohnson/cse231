@@ -37,10 +37,12 @@ public class Passenger{
                 return service;
             }
         
+	@Override
         public String toString(){
                 return name + " " + service;
             }
-
+	
+	@Override
         public boolean equals(Object o){
                 if( ! ( o instanceof Passenger) ){
                     return false;
