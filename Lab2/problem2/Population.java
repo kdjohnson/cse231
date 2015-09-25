@@ -80,22 +80,29 @@ public class Population{
 
     private static String print( int x ){
 	switch( x ){
-	    case 0 : return "\nPlease enter a number greater than or equal to 2 for starting organisms: ";
+	    case 0 : 
+		    return "\nPlease enter a number greater than or equal to 2 for starting organisms: ";
 
-	    case 1 : return "\nPlease enter a number greater than 0 for daily increase: ";
+	    case 1 :
+		    return "\nPlease enter a number greater than 0 for daily increase: ";
 
-	    case 2 : return "\nPlease enter a number equal to or greater than 1 for days: ";
+	    case 2 :
+		    return "\nPlease enter a number equal to or greater than 1 for days: ";
 
-	    case 3 : return "Enter starting organisms: ";
+	    case 3 : 
+		    return "Enter starting organisms: ";
 
-	    case 4 : return "Enter daily increase: ";
+	    case 4 : 
+		    return "Enter daily increase: ";
 
-	    case 5 : return "Enter days: "; 
+	    case 5 : 
+		    return "Enter days: "; 
 
 	    case 6 : 
 		    return "Day\t\t\t\tOrganisms  " + "\n-------------------------------------------------------";
 
-	    default: return "Sorry";
+	    default: 
+		    return "Sorry";
 	}
 
     }
