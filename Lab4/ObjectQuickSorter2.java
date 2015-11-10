@@ -4,15 +4,10 @@ public class ObjectQuickSorter2< T extends Comparable<T>> {
 
     private void doQuickSort( T[] array, int start, int end){
 
-        quickSort( array, start, end);
-
-    }
-
-    private void quickSort( T[] array, int start , int end) {
-        if ( start < end ) {
-            int pivotValue = partition( array, start, end);
-            quickSort( array, start, pivotValue - 1);
-            quickSort( array, pivotValue + 1, end );
+        if( start < end){
+            int pivotValue = partition( array, start, end );
+            doQuickSort( array, start, pivotValue - 1 );
+            doQuickSort( array, pivotValue + 1, end );
         }
     }
 
@@ -27,9 +22,9 @@ public class ObjectQuickSorter2< T extends Comparable<T>> {
             }
         }
 
-        swap( array, i+1, end);
+        swap( array, i + 1, end);
 
-        return i+1;
+        return i + 1;
     }
 
     private void swap( T[] array, int start, int end) {
